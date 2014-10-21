@@ -3,39 +3,41 @@
 <head>
   <title>Portfolio</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <%= javascript_include_tag 'application' %>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_ZCXZ1m6arGvsScNYD1QtZq2fEXxbTfk&amp;libraries=places"> </script>
+  <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_ZCXZ1m6arGvsScNYD1QtZq2fEXxbTfk&amp;libraries=places"> </script> -->
   <%= csrf_meta_tags %>
 </head>
 <body>
   <section id="container">
-        
+
             <!-- Header -->
-			<header> 
+			<header>
             	<!-- Logo -->
             	<div id="logo">
                 	<h2>ERIC HUANG</h2>
                     <h4>SOFTWARE DEVELOPER</h4>
                 </div>
                 <!-- /Logo -->
-                
+
                 <!-- Social Icons -->
                 <ul class="socialicons">
-                	<li><a href="#" class="transition">&#x2a;</a></li>
-                    <li><a href="#" class="transition">&#x33;</a></li>
-                    <li><a href="#" class="transition">&#x2d;</a></li>
-                    <li><a href="#" class="transition">&#x21;</a></li>
+                  <li><a href="http://www.facebook.com/erichuang310" class="transition"><i class="fa fa-facebook fa-fw"></a></i></li>
+                    <li><a href="http://www.github.com/erichuang310" class="transition"><i class="fa fa-github fa-fw"></a></i></li>
+                  <li><a href="http://www.linkedin.com/in/erichuang310" class="transition"><i class="fa fa-linkedin fa-fw"></a></i></li>
+                  <li><a href="mailto:erichuang310@gmail.com" class="transition"><i class="fa fa-envelope fa-fw"></a></i></li>
 
                 </ul>
                 <!-- /Social Icons -->
             </header>
             <!-- /Header -->
-            
+
             <!-- Content -->
             <section id="content" >
-            
+
                 <!-- Profile -->
-                <div id="profile"> 
+                <div id="profile">
                  	<!-- About section -->
                 	<div class="about">
                     	<div class="photo-inner">
@@ -50,15 +52,15 @@
                         <p>Hello! My name is Eric and I develop Ruby on Rails web applications. I graduated from UC Davis two years ago with a B.S. in Biomedical Engineering. Since then, I've worked as a hardware engineer and as a software engineer.</p>
                     </div>
                     <!-- /About section -->
-                     
+
                     <!-- Personal info section -->
                 	<div class="personal-info">
                         <p>I love solving interesting problems, picking up new technologies, and enjoying a refreshing beer. I currently live in San Francisco and am available for a full-time opportunity. If you want to collaborate on a cool project, feel free to contact me. I am always up to tackle a new challenge. Thanks for visiting! :)</p>
                     </div>
 
                     <!-- /Personal info section -->
-                </div>        
-                <!-- /Profile --> 
+                </div>
+                <!-- /Profile -->
 
                 <!-- Menu -->
                 <nav class="menu">
@@ -72,16 +74,16 @@
                     <a class="next" id="menu-next" href="#">&#xe076;</a>
 
                 </nav>
-                <!-- /Menu --> 
-                
+                <!-- /Menu -->
+
                 <!-- Resume -->
                 <section id="resume">
                 	 <div class="timeline-section">
-                        <!-- Timeline for Employment  -->   
-                        <h3 class="main-heading">Employment</h3>   
+                        <!-- Timeline for Employment  -->
+                        <h3 class="main-heading">Employment</h3>
                         <ul class="timeline">
                             <li>
-                                                   
+
                                 <div class="timelineUnit">
                                     <h4>Software Engineer<span class="timelineDate">1/14 - Present</span></h4>
                                     <h5>Rhino Labs Inc</h5>
@@ -93,7 +95,7 @@
                                 </div>
                             </li>
                             <li>
-                         
+
                                 <div class="timelineUnit">
                                     <h4>Hardware Engineer (Graduate-level Co-Op)<span class="timelineDate">5/13 - 12/13</span></h4>
                                     <h5>Cisco Systems</h5>
@@ -104,7 +106,7 @@
                                 </div>
                             </li>
                             <li>
-                     
+
                                 <div class="timelineUnit">
                                     <h4>Undergraduate Researcher<span class="timelineDate">8/11 - 9/12</span></h4>
                                     <h5>MiNI Laboratories</h5>
@@ -115,25 +117,25 @@
                                 </div>
                             </li>
                             <div class="clear"></div>
-                        </ul> 
+                        </ul>
                         <!-- /Timeline for Employment  -->
 
-                        <!-- Timeline for Education  -->   
-                        <h3 class="main-heading">Education</h3>   
+                        <!-- Timeline for Education  -->
+                        <h3 class="main-heading">Education</h3>
                          <ul class="timeline">
-                            <li>            
+                            <li>
                                 <div class="timelineUnit">
                                     <h4>UC Davis<span class="timelineDate">2012</span></h4>
                                     <h5>B.S. Biomedical Engineering</h5>
                                 </div>
                             </li>
                             <div class="clear"></div>
-                        </ul> 
-                        <!-- /Timeline for Education  -->              
+                        </ul>
+                        <!-- /Timeline for Education  -->
                     </div>
                     <div class="skills-section">
                         <!-- Skills -->
-                        <h3 class="main-heading">Technical skills</h3> 
+                        <h3 class="main-heading">Technical skills</h3>
                         <ul class="skills">
                             <li>
                                 <h4>Ruby</h4>
@@ -162,22 +164,22 @@
                             <li>
                                 <h4>HTML5</h4>
                                 <div class="rating" data-rat="7"></div>
-                            </li> 
+                            </li>
                             <li>
                                 <h4>CSS</h4>
                                 <div class="rating" data-rat="5"></div>
-                            </li> 
+                            </li>
                             <li>
                                 <h4>Git</h4>
                                 <div class="rating" data-rat="4"></div>
-                            </li> 
+                            </li>
                         </ul>
                      <!-- /Skills -->
                      </div>
                      <%= link_to "Download resume as PDF", download_resume_path, :class => "button transition" %>
                 </section>
-                <!-- /Resume --> 
-                                        
+                <!-- /Resume -->
+
                 <!-- Portfolio -->
                 <section id="portfolio">
                      <ul class="cats-filter" id="portfolio-filter">
@@ -186,33 +188,37 @@
                         <li><a href="" class="transition" data-filter=".node-js">Node.js</a></li>
                         <li><a href="" class="transition" data-filter=".other">Other</a></li>
                     </ul>
-                    <div class="extra-text">Recent projects</div>
+                    <!-- <div class="extra-text">Recent projects</div> -->
                     <ul id="portfolio-list">
-                        <li class="ruby-on-rails">
-                            <a href="http://www.carbnd.com" title="Car borrow and drive" class="folio">
-                                <img src="/assets/carbnd.png" alt="Image Title">
-                                <h2 class="title">Carbnd</h2>
-                                <!-- <span class="categorie">Ruby on Rails</span>  -->
-                            </a>
-                    	</li>
-                        <li class="node-js">
-                            <a href="http://www.chatsies.com" title="Chat with no backsies" class="folio">
-                                <img src="/assets/chatsies.png" alt="" >
-                                <h2 class="title">Chatsies</h2>
-                                <!-- <span class="categorie">Node.js</span>  -->
-                            </a>
-                        </li>
-                        <li class="other">
-                            <a href="http://www.omgasteroids.com" title="Best asteroids game ever" class="folio">
-                                <img src="/assets/asteroids.png" alt="" >
-                                <h2 class="title">OMG Asteroids</h2>
-                                <!-- <span class="categorie">Other</span>  -->
-                            </a>
-                        </li>
+                      <li class="ruby-on-rails">
+                        <a href="http://www.carbnd.com" title="Car borrow and drive" class="folio">
+                          <img src="/assets/carbnd.jpeg" alt="Image Title">
+                          <!-- <h2 class="title">Carbnd</h2> -->
+                          <span class="text-content"><span>CARBND</span></span>
+                          <!-- <span class="categorie">Ruby on Rails</span>  -->
+                        </a>
+
+                      </li>
+                      <li class="node-js">
+                        <a href="http://www.chatsies.com" title="Chat with no backsies" class="folio">
+                          <img src="/assets/chatsies.jpg" alt="" >
+                          <span class="text-content"><span>CHATSIES</span></span>
+                          <!-- <h2 class="title">Chatsies</h2> -->
+                          <!-- <span class="categorie">Node.js</span>  -->
+                        </a>
+                      </li>
+                      <li class="other">
+                        <a href="http://www.omgasteroids.com" title="Best asteroids game ever" class="folio">
+                          <img src="/assets/asteroids.png" alt="" >
+                          <span class="text-content"><span>OMG ASTEROIDS</span></span>
+                          <!-- <h2 class="title">OMG Asteroids</h2> -->
+                          <!-- <span class="categorie">Other</span>  -->
+                        </a>
+                      </li>
                     </ul>
                 </section>
-                <!-- /Portfolio -->  
-                 
+                <!-- /Portfolio -->
+
                 <!-- Contact -->
                 <section id="contact">
                 	<div id="map"></div>
@@ -226,7 +232,7 @@
                         </ul>
                     </div>
                     <!-- /Contact Info -->
-                    
+
                     <!-- Contact Form -->
                     <div class="contact-form">
                         <h3 class="main-heading"><span>Let's talk</span></h3>
@@ -244,21 +250,21 @@
                             	<label for="message">Message</label>
                                 <textarea name="message" cols="88" rows="6" class="textarea" ></textarea>
                             </p>
-                            <input type="submit" name="submit" value="Send your message" class="button transition">
+                            <input type="submit" name="submit" value="Send Message" class="button transition">
                         </form>
                     </div>
                     <!-- /Contact Form -->
                 </section>
-                <!-- /contact -->  
+                <!-- /contact -->
 
             </section>
             <!-- /Content -->
-            
+
             <!-- Footer -->
 			<footer>
             </footer>
-            <!-- /Footer --> 
-            
+            <!-- /Footer -->
+
         </section>
 		<!-- /Container -->
 </body>
