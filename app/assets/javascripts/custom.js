@@ -215,6 +215,7 @@ jQuery(document).ready(function(){
 			   	$(".error,.success").remove();
 		   		console.log(data);
 		   		$contactform.prepend(response);
+		   		$contactform.trigger("reset");
 			}, error: function(data) {
 				debugger
 			   	response = '<div class="error">'+ $error +'</div>';
