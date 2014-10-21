@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_ZCXZ1m6arGvsScNYD1QtZq2fEXxbTfk&amp;libraries=places"> </script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <section id="container">
+        
+            <!-- Header -->
+			<header> 
+            	<!-- Logo -->
+            	<div id="logo">
+                	<h2>ERIC HUANG</h2>
+                    <h4>SOFTWARE DEVELOPER</h4>
+                </div>
+                <!-- /Logo -->
+                
+                <!-- Social Icons -->
+                <ul class="socialicons">
+                	<li><a href="#" class="transition">&#x2a;</a></li>
+                    <li><a href="#" class="transition">&#x2c;</a></li>
+                    <li><a href="#" class="transition">&#x2d;</a></li>
+                    <li><a href="#" class="transition">&#x31;</a></li>
+
+                </ul>
+                <!-- /Social Icons -->
+            </header>
+            <!-- /Header -->
+            
+            <!-- Content -->
+            <section id="content" >
+            
+                <!-- Profile -->
+                <div id="profile"> 
+                 	<!-- About section -->
+                	<div class="about">
+                    	<div class="photo-inner">
+                            <ul>
+                                <li><img src="assets/photo.jpg" height="186" width="153" /></li>
+                                <li><img src="assets/photo1.png" height="186" width="153" /></li>
+                            </ul>
+                        </div>
+
+                        <h1>ERIC HUANG</h1>
+                        <h3>SOFTWARE DEVELOPER</h3>
+                        <p>Hello! My name is Eric and I develop Ruby on Rails web applications. I graduated from UC Davis two years ago with a B.S. in Biomedical Engineering. Since then, I've worked as a hardware engineer and as a software engineer.</p>
+                    </div>
+                    <!-- /About section -->
+                     
+                    <!-- Personal info section -->
+                	<div class="personal-info">
+                        <p>I love solving interesting problems, picking up new technologies, and enjoying a refreshing beer. I currently live in San Francisco and am available for a full-time opportunity. If you want to collaborate on a cool project, feel free to contact me. I am always up to tackle a new challenge. Thanks for visiting! :)</p>
+                    </div>
+
+                    <!-- /Personal info section -->
+                </div>        
+                <!-- /Profile --> 
+
+                <!-- Menu -->
+                <nav class="menu">
+                	<ul class="tabs">
+                        <li class="tmenu"><a href="#profile" class="tab-profile"><i>&#x43;</i>Profile</a></li>
+                        <li class="tmenu"><a href="#resume"><i class="icomoon-font">&#x3a;</i>Resume</a></li>
+                        <li class="tmenu"><a href="#portfolio"><i class="icomoon-font">&#x38;</i>Portfolio</a></li>
+                        <li class="tmenu"><a href="#contact"><i class="icomoon-font">&#x21;</i>Contact</a></li>
+                    </ul>
+                    <a class="prev" id="menu-prev" href="#">&#xe073;</a>
+                    <a class="next" id="menu-next" href="#">&#xe076;</a>
+
+                </nav>
+                <!-- /Menu --> 
+                
+                <!-- Resume -->
+                <section id="resume">
+                	 <div class="timeline-section">
+                        <!-- Timeline for Employment  -->   
+                        <h3 class="main-heading">Employment</h3>   
+                        <ul class="timeline">
+                            <li>
+                                                   
+                                <div class="timelineUnit">
+                                    <h4>Software Engineer<span class="timelineDate">1/14 - Present</span></h4>
+                                    <h5>Rhino Labs Inc</h5>
+                                    <p>
+                                        Architected full stack RoR app to manage production of networking products.<br>
+                                        Scaled production capabilities to handle multi-million dollar contracts.<br>
+                                        Implemented Resque background workers to initialize and test hardware.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                         
+                                <div class="timelineUnit">
+                                    <h4>Hardware Engineer (Graduate-level Co-Op)<span class="timelineDate">5/13 - 12/13</span></h4>
+                                    <h5>Cisco Systems</h5>
+                                    <p>
+                                        Developed RoR app to track SerDes project among cross-functional teams.<br>
+                                        Automated ASIC lane mapping, reducing weeks of work down to minutes.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                     
+                                <div class="timelineUnit">
+                                    <h4>Undergraduate Researcher<span class="timelineDate">8/11 - 9/12</span></h4>
+                                    <h5>MiNI Laboratories</h5>
+                                    <p>
+                                        Invented the Microfluidic Impact Printer (Earned 3X U.S. Patents, 2X Awards).<br>
+                                        Authored technical, peer-reviewed article in Lab on a Chip.
+                                    </p>
+                                </div>
+                            </li>
+                            <div class="clear"></div>
+                        </ul> 
+                        <!-- /Timeline for Employment  -->
+
+                        <!-- Timeline for Education  -->   
+                        <h3 class="main-heading">Education</h3>   
+                         <ul class="timeline">
+                            <li>            
+                                <div class="timelineUnit">
+                                    <h4>UC Davis<span class="timelineDate">2012</span></h4>
+                                    <h5>B.S. Biomedical Engineering</h5>
+                                </div>
+                            </li>
+                            <div class="clear"></div>
+                        </ul> 
+                        <!-- /Timeline for Education  -->              
+                    </div>
+                    <div class="skills-section">
+                        <!-- Skills -->
+                        <h3 class="main-heading">Technical skills</h3> 
+                        <ul class="skills">
+                            <li>
+                                <h4>Ruby</h4>
+                                <div class="rating" data-rat="7"></div>
+                            </li>
+                            <li>
+                                <h4>Ruby on Rails</h4>
+                                <div class="rating" data-rat="7"></div>
+                            </li>
+                            <li>
+                                <h4>Node.js</h4>
+                                <div class="rating" data-rat="2"></div>
+                            </li>
+                            <li>
+                                <h4>JavaScript</h4>
+                                <div class="rating" data-rat="6"></div>
+                            </li>
+                            <li>
+                                <h4>jQuery</h4>
+                                <div class="rating" data-rat="6"></div>
+                            </li>
+                            <li>
+                                <h4>Backbone.js</h4>
+                                <div class="rating" data-rat="6"></div>
+                            </li>
+                            <li>
+                                <h4>HTML5</h4>
+                                <div class="rating" data-rat="7"></div>
+                            </li> 
+                            <li>
+                                <h4>CSS</h4>
+                                <div class="rating" data-rat="5"></div>
+                            </li> 
+                            <li>
+                                <h4>Git</h4>
+                                <div class="rating" data-rat="4"></div>
+                            </li> 
+                        </ul>
+                     <!-- /Skills -->
+                     </div>
+                     <%= link_to "Download resume as PDF", download_resume_path, :class => "button transition" %>
+                </section>
+                <!-- /Resume --> 
+                                        
+                <!-- Portfolio -->
+                <section id="portfolio">
+                     <ul class="cats-filter" id="portfolio-filter">
+                        <li><a href="" class="current transition" data-filter="*">All</a></li>
+                        <li><a href="" class="transition" data-filter=".ruby-on-rails">Ruby on Rails</a></li>
+                        <li><a href="" class="transition" data-filter=".node-js">Node.js</a></li>
+                        <li><a href="" class="transition" data-filter=".other">Other</a></li>
+                    </ul>
+                    <div class="extra-text">Recent projects</div>
+                    <ul id="portfolio-list">
+                        <li class="ruby-on-rails">
+                            <a href="http://www.carbnd.com" title="Car borrow and drive" class="folio">
+                                <img src="/assets/carbnd.png" alt="Image Title">
+                                <h2 class="title">Carbnd</h2>
+                                <!-- <span class="categorie">Ruby on Rails</span>  -->
+                            </a>
+                    	</li>
+                        <li class="node-js">
+                            <a href="http://www.chatsies.com" title="Chat with no backsies" class="folio">
+                                <img src="/assets/chatsies.png" alt="" >
+                                <h2 class="title">Chatsies</h2>
+                                <!-- <span class="categorie">Node.js</span>  -->
+                            </a>
+                        </li>
+                        <li class="other">
+                            <a href="http://www.omgasteroids.com" title="Best asteroids game ever" class="folio">
+                                <img src="/assets/asteroids.png" alt="" >
+                                <h2 class="title">OMG Asteroids</h2>
+                                <!-- <span class="categorie">Other</span>  -->
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /Portfolio -->  
+                 
+                <!-- Contact -->
+                <section id="contact">
+                	<div id="map"></div>
+                	<!-- Contact Info -->
+                    <div class="contact-info">
+                        <h3 class="main-heading"><span>Contact info</span></h3>
+                    	<ul>
+                            <li>Eric Huang</li>
+                            <li>Phone: (408) 387-4437</li>
+                            <li>Email: erichuang310@gmail.com</li>
+                        </ul>
+                    </div>
+                    <!-- /Contact Info -->
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h3 class="main-heading"><span>Let's talk</span></h3>
+                        <div id="contact-status"></div>
+                        <form action="" id="contactform">
+                            <p>
+                            	<label for="name">Name</label>
+                            	<input type="text" name="name" class="input" >
+                            </p>
+                            <p>
+                            	<label for="email">Email</label>
+                            	<input type="text" name="email" class="input">
+                            </p>
+                            <p>
+                            	<label for="message">Message</label>
+                                <textarea name="message" cols="88" rows="6" class="textarea" ></textarea>
+                            </p>
+                            <input type="submit" name="submit" value="Send your message" class="button transition">
+                        </form>
+                    </div>
+                    <!-- /Contact Form -->
+                </section>
+                <!-- /contact -->  
+
+            </section>
+            <!-- /Content -->
+            
+            <!-- Footer -->
+			<footer>
+            </footer>
+            <!-- /Footer --> 
+            
+        </section>
+		<!-- /Container -->
+</body>
+</html>
